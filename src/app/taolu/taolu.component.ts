@@ -9,12 +9,12 @@ import { TaoluService } from '../taolu.service';
   styleUrls: ['./taolu.component.css']
 })
 export class TaoluComponent implements OnInit {
-  items: Taolu[];
+  items: [];
 
   constructor(private taoluService: TaoluService) { }
 
   ngOnInit() {
-    items = this.taoluService.getAll();
+    this.items = this.taoluService.getAll();
   }
 
 }

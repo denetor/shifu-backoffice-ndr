@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -13,6 +14,7 @@ import { TaoluService } from './taolu.service';
   imports:      [ 
     BrowserModule, 
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot([
       { path: '', component: TaoluComponent },
     ])
