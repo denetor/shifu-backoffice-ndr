@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Yu Bei",
+    "description": "Pronti",
+    "type": "fullbody"
+  },
+  {
+    "id": 2,
+    "name": "Gua Gong",
+    "description": "Avambraccio che appende",
+    "type": "upperbody"
+  },
+  {
+    "id": 3,
+    "name": "Deng Shan Bu",
+    "description": "Passo che sale la mntagna",
+    "type": "lowerbody"
+  },
+  {
+    "id": 4,
+    "name": "Tong Chui",
+    "description": "Pugno che unisce",
+    "type": "upperbody"
+  },
+  {
+    "id": 5,
+    "name": "Tiao Gong",
+    "description": "Avambraccio che solleva",
+    "type": "upperbody"
+  },
+  {
+    "id": 6,
+    "name": "Rao Gong",
+    "description": "Avambraccio che devia",
+    "type": "upperbody"
+  }
+]

@@ -9,6 +9,8 @@ import { HelloComponent } from './hello.component';
 import { NdrNavbarComponent } from './ndr-navbar/ndr-navbar.component';
 import { TaoluComponent } from './taolu/taolu.component';
 import { TaoluService } from './taolu.service';
+import { TaoluStepService } from './taolu-step.service';
+import { TaoluStepComponent } from './taolu-step/taolu-step.component';
 
 @NgModule({
   imports:      [ 
@@ -16,11 +18,13 @@ import { TaoluService } from './taolu.service';
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot([
-      { path: '', component: TaoluComponent },
+      { path: 'taolu', component: TaoluComponent },
+      { path: 'steps', component: TaoluStepComponent },
+      { path: '**', component: TaoluComponent }
     ])
     ],
-  declarations: [ AppComponent, NdrNavbarComponent, TaoluComponent ],
+  declarations: [ AppComponent, NdrNavbarComponent, TaoluComponent, TaoluStepComponent ],
   bootstrap:    [ AppComponent ],
-  providers: [TaoluService]
+  providers: [TaoluService, TaoluStepService]
 })
 export class AppModule { }

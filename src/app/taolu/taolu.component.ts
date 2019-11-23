@@ -9,7 +9,7 @@ import { TaoluService } from '../taolu.service';
   styleUrls: ['./taolu.component.css']
 })
 export class TaoluComponent implements OnInit {
-  items: [];
+  items: Taolu[];
 
   constructor(private taoluService: TaoluService) { }
 
